@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Grados - Sistema Académico</title>
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/grados.css">
+</head>
+
+<body>
+    <header id="header"></header>
+    <main>
+        <h2>Gestion de Grados</h2>
+        <section class="gestion-form">
+            <form id="form-grado">
+                <div class="form-group">
+                    <label for="codigo">Codigo</label>
+                    <input type="text" id="codigo" name="grado_codigo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="grado_nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="capacidad">Capacidad de Alumnos</label>
+                    <input type="number" id="capacidad" name="grado_capacidad_alumnos" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="descripcion">Descripcion</label>
+                    <textarea id="descripcion" name="grado_descripcion" required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Registrar Grado</button>
+                <button type="button" id="cancelar-edicion" class="btn-cancelar" style="display: none;" onclick="cancelarEdicion()">Cancelar Edición</button>
+            </form>
+        </section>
+        <section class="tabla-registros">
+            <h3>Lista de Grados</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Codigo</th>
+                        <th>Nombre</th>
+                        <th>Capacidad</th>
+                        <th>Descripcion</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="grados-list">
+                    
+                </tbody>
+            </table>
+        </section>
+        <a href="inicio.html" class="btn-volver">Volver</a>
+    </main>
+    <script src="../assets/js/cargarComponente.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../scripts/grado.js"></script>
+</body>
+
+</html>

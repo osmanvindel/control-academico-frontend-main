@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Alumnos</title>
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/formulario-persona.css">
+    <link rel="stylesheet" href="../assets/css/alumnos.css">
+</head>
+
+<header id="header">
+    
+</header>
+
+<body>
+    <h2>Registro de Alumnos</h2>
+    <div id="form">
+        <form id="formulario-alumno">
+            <label for="matricula">Matrícula:</label>
+            <select id="matricula" name="matricula" required>
+                
+            </select>
+
+            <label for="cedula">Cedula:</label>
+            <input type="text" id="cedula" name="cedula" required/>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <label for="padre-familia">Padre de Familia:</label>
+            <select id="padre-familia" name="padre-familia" required>            
+            </select>
+
+            <label for="grado">Grado:</label>
+            <select id="grado" name="grado" required>             
+            </select>
+
+            <label for="departamento">Departamento:</label>
+            <input type="text" id="departamento" name="departamento" required>
+
+            <label for="municipio">Municipio:</label>
+            <input type="text" id="municipio" name="municipio" required>
+
+            <label for="ciudad">Ciudad:</label>
+            <input type="text" id="ciudad" name="ciudad" required>
+
+            <label for="barrio">Barrio/Colonia:</label>
+            <input type="text" id="barrio" name="barrio" required>
+
+            <label for="referencia">Referencia:</label>
+            <input type="text" id="referencia" name="referencia" required>
+
+            <button type="submit">Registrar Alumno</button>
+        </form>
+    </div>
+
+    <section class="tabla-registros">
+        <h2>Lista de Alumnos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Matrícula</th>
+                    <th>Cedula</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Correo Electrónico</th>
+                    <th>Teléfono</th>
+                    <th>Departamento</th>
+                    <th>Municipio</th>        
+                    <th>Barrio/Colonia</th>
+                    <th>Referencia</th>
+                    <th>Padre de Familia</th>
+                    <th>Grado</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="alumnos-list">
+              
+            </tbody>
+        </table>
+    </section>
+    <a href="./inicio.html" class="btn-volver">Volver al inicio</a>
+
+    <script src="../scripts/alumnos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+
+</html>

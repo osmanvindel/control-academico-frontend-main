@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Periodos - Sistema Académico</title>
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/periodos.css">
+</head>
+<body>
+    <header id="header"></header>
+    <main>
+        <h2>Gestión de Periodos</h2>
+        <section class="gestion-form">
+            <form id="form-periodo">
+                <div class="form-group">
+                    <label for="codigo">Código</label>
+                    <input type="text" id="codigo" name="periodo_codigo" required placeholder="Ej. 2024-1">
+                </div>
+
+                <div class="form-group">
+                    <label for="fecha-inicio">Fecha de Inicio</label>
+                    <!-- Cambié a "date" para solo manejar la fecha -->
+                    <input type="date" id="fecha-inicio" name="periodo_fecha_inicio" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="fecha-fin">Fecha de Fin</label>
+                    <!-- Cambié a "date" para solo manejar la fecha -->
+                    <input type="date" id="fecha-fin" name="periodo_fecha_fin" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="activo">Activo</label>
+                    <select id="activo" name="periodo_activo" required>
+                        <option value="1">Sí</option>
+                        <option value="0">No</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-submit">Registrar Periodo</button>
+            </form>
+        </section>
+        <section class="tabla-registros">
+            <h3>Lista de Periodos</h3>
+            <table id="tabla-periodos">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Código</th>
+                        <th>Fecha de Inicio</th>
+                        <th>Fecha de Fin</th>
+                        <th>Activo</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Los periodos serán cargados aquí -->
+                </tbody>
+            </table>
+        </section>
+        <a href="./inicio.html" class="btn-volver">Volver al inicio</a>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../assets/js/periodos.js"></script>
+</body>
+</html>

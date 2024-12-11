@@ -1,0 +1,75 @@
+.tabla-registros {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.tabla-registros h3 {
+    color: #4e54c8;
+    margin-bottom: 20px;
+}
+
+.tabla-registros table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tabla-registros th,
+.tabla-registros td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.tabla-registros th {
+    background-color: #4e54c8;
+    color: white;
+}
+
+.tabla-registros tr:nth-child(even) {
+    background-color: #f4f4f9;
+}
+
+.btn-volver {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background: #4e54c8;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    max-width: 200px;
+    transition: background 0.3s;
+}
+
+.btn-volver:hover {
+    background: #8f94fb;
+}
+
+
+.btn-edit, .btn-delete {
+    background: linear-gradient(to right, #8f94fb, #4e54c8);
+    color: white;
+    padding: 5px 10px;  
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.875rem; 
+    text-transform: uppercase;
+    transition: background 0.3s;
+    margin: 0 5px;  
+    display: inline-block; 
+}
+
+.btn-edit:hover, .btn-delete:hover {
+    background: linear-gradient(to right, #4e54c8, #8f94fb);
+}
+
+
+.tabla-registros td button {
+    margin: 0 5px;
+}

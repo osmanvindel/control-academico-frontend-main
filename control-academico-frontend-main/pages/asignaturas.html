@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Asignaturas</title>
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/asignaturas.css">
+</head>
+
+<body>
+    <header id="header">
+        
+    </header>
+    <main>
+        <h2>Gestion de Asignaturas</h2>
+        <section class="gestion-form">
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="codigo">Codigo</label>
+                    <input type="text" id="codigo" name="asignatura_codigo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="asignatura_nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="descripcion">Descripcion</label>
+                    <textarea id="descripcion" name="asignatura_descripcion" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="activo">Grado</label>
+                    <select id="activo" name="periodo_activo" required>
+                        <option value="">Seleccione un grado</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-submit">Registrar Asignatura</button>
+            </form>
+        </section>
+        <section class="tabla-registros">
+            <h3>Lista de Asignaturas</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Código</th>
+                        <th>Nombre</th>
+                        <th>Descripcion</th>
+                        <th>Grado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   
+                </tbody>
+            </table>
+        </section>
+        <a href="./inicio.html" class="btn-volver">Volver al inicio</a>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../scripts/asignaturas.js"></script>
+</body>
+
+</html>

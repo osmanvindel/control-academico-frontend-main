@@ -1,0 +1,102 @@
+/* Estilo de la tabla */
+.tabla-registros {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.tabla-registros h3 {
+    color: #4e54c8;
+    margin-bottom: 20px;
+}
+
+.tabla-registros table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    max-width: 1200px; /* Ancho mayor para adaptarse a más columnas */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+/* Estilo de las celdas de la tabla */
+.tabla-registros th,
+.tabla-registros td {
+    padding: 12px 15px; /* Aumentamos el padding para más espacio */
+    border: 1px solid #ddd;
+    text-align: center;
+    word-wrap: break-word; /* Para que el texto largo no se desborde */
+}
+
+.tabla-registros th {
+    background-color: #4e54c8;
+    color: white;
+}
+
+.tabla-registros tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Estilo para más columnas y responsividad */
+@media (max-width: 1200px) {
+    .tabla-registros table {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .tabla-registros th, .tabla-registros td {
+        font-size: 0.875rem; /* Ajustar texto si la pantalla es pequeña */
+    }
+}
+
+@media (max-width: 768px) {
+    .tabla-registros th, .tabla-registros td {
+        padding: 8px; /* Ajustar padding en pantallas más pequeñas */
+    }
+
+    .tabla-registros {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+/* Estilo del botón volver */
+.btn-volver {
+    display: block;
+    text-align: center;
+    margin: 30px auto;
+    padding: 12px 20px;
+    background: #4e54c8;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    max-width: 200px;
+    transition: background 0.3s;
+}
+
+.btn-volver:hover {
+    background: #8f94fb;
+}
+
+/* Estilo de los botones de acción */
+.btn-edit, .btn-delete {
+    background: linear-gradient(to right, #8f94fb, #4e54c8);
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    transition: background 0.3s;
+    margin: 0 10px;
+}
+
+.btn-edit:hover, .btn-delete:hover {
+    background: linear-gradient(to right, #4e54c8, #8f94fb);
+}
+
+/* Espaciado entre botones */
+.tabla-registros td button {
+    margin: 0 8px;
+}

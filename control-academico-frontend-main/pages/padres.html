@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Padres de Familia</title>
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/formulario-persona.css">
+    <link rel="stylesheet" href="../assets/css/padres.css">
+</head>
+<header id="header"></header>
+
+<body>
+    <h2>Registro Padres de Familia</h2>
+    <div id="form"></div>
+
+    <section class="tabla-registros">
+        <h2>Lista de Padres</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Cédula</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Correo Electrónico</th>
+                    <th>Teléfono</th>
+                    <th>Departamento</th>
+                    <th>Municipio</th>
+                    <th>Ciudad</th>
+                    <th>Barrio/Colonia</th>
+                    <th>Referencia</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>123456789</td>
+                    <td>Pedro</td>
+                    <td>Sanchez</td>
+                    <td>psanchez@email.com</td>
+                    <td>99999999</td>
+                    <td>Atlántico</td>
+                    <td>Puerto</td>
+                    <td>Cartagena</td>
+                    <td>El Carmen</td>
+                    <td>Cerca del parque</td>
+                    <td>
+                        <button class="btn-edit" onclick="editarAlumno(1)">Actualizar</button>
+                        <button class="btn-delete" onclick="eliminarAlumno(1)">Eliminar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <a href="./inicio.html" class="btn-volver">Volver al inicio</a>
+
+    <script>
+        function eliminarAlumno(id) {
+            alert("Alumno con ID " + id + " eliminado.");
+        }
+    </script>
+    <script src="../assets/js/cargarComponente.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            cargarComponente('../components/header.html', 'header');
+            cargarComponente('../components/formulario-persona.html', 'form');
+        });
+    </script>
+</body>
+
+</html>

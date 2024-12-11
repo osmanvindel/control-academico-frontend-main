@@ -1,0 +1,164 @@
+/* Estilo general del formulario */
+#form {
+    width: 100%;
+    max-width: 800px; /* Límite para que no se expanda demasiado */
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #4e54c8;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+/* Estilo de los labels */
+label {
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+/* Estilo de los inputs y selects */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin: 5px 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus {
+    border-color: #4e54c8;
+    outline: none;
+}
+
+/* Estilo del botón de envío */
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #4e54c8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: #8f94fb;
+}
+
+/* Diseño de la tabla */
+.tabla-registros table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tabla-registros th,
+.tabla-registros td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.tabla-registros th {
+    background-color: #4e54c8;
+    color: white;
+}
+
+.tabla-registros tr:nth-child(even) {
+    background-color: #f4f4f9;
+}
+
+/* Ajuste de las columnas de la tabla */
+.tabla-registros th:nth-child(1),
+.tabla-registros td:nth-child(1) {
+    width: 8%;
+}
+
+.tabla-registros th:nth-child(2),
+.tabla-registros td:nth-child(2) {
+    width: 12%;
+}
+
+.tabla-registros th:nth-child(3),
+.tabla-registros td:nth-child(3) {
+    width: 10%;
+}
+
+.tabla-registros th:nth-child(4),
+.tabla-registros td:nth-child(4) {
+    width: 10%;
+}
+
+.tabla-registros th:nth-child(5),
+.tabla-registros td:nth-child(5) {
+    width: 18%;
+}
+
+.tabla-registros th:nth-child(6),
+.tabla-registros td:nth-child(6) {
+    width: 10%;
+}
+
+/* Estilo para los botones de editar y eliminar */
+.btn-edit,
+.btn-delete {
+    background: linear-gradient(to right, #8f94fb, #4e54c8);
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    transition: background 0.3s;
+    margin: 0 5px;
+}
+
+.btn-edit:hover,
+.btn-delete:hover {
+    background: linear-gradient(to right, #4e54c8, #8f94fb);
+}
+
+/* Estilo para el botón de volver */
+.btn-volver {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background: #4e54c8;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    max-width: 200px;
+    transition: background 0.3s;
+}
+
+.btn-volver:hover {
+    background: #8f94fb;
+}

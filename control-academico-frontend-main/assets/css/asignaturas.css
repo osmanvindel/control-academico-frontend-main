@@ -1,0 +1,122 @@
+.gestion-form {
+    background: #ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+.gestion-form .form-group {
+    margin-bottom: 15px;
+}
+
+.gestion-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #4e54c8;
+}
+
+.gestion-form input,
+.gestion-form select,
+.gestion-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.gestion-form input:focus,
+.gestion-form select:focus,
+.gestion-form textarea:focus {
+    border-color: #4e54c8;
+    outline: none;
+    box-shadow: 0 0 5px rgba(78, 84, 200, 0.5);
+}
+
+.gestion-form .btn-submit {
+    background: linear-gradient(to right, #8f94fb, #4e54c8);
+    color: white;
+    padding: 8px 12px;
+    /* Tamaño más compacto */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    /* Tamaño de texto reducido */
+    text-transform: uppercase;
+    transition: background 0.3s;
+    display: block;
+    margin: 20px auto 0;
+    text-align: center;
+    max-width: 160px;
+    /* Ajuste del ancho máximo */
+}
+
+.gestion-form .btn-submit:hover {
+    background: linear-gradient(to right, #4e54c8, #8f94fb);
+}
+
+
+.tabla-registros {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.tabla-registros h3 {
+    color: #4e54c8;
+    margin-bottom: 20px;
+}
+
+.tabla-registros table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tabla-registros th,
+.tabla-registros td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.tabla-registros th {
+    background-color: #4e54c8;
+    color: white;
+}
+
+.tabla-registros tr:nth-child(even) {
+    background-color: #f4f4f9;
+}
+
+
+.btn-edit,
+.btn-delete {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.btn-volver {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background: #4e54c8;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    max-width: 200px;
+    transition: background 0.3s;
+}
+
+.btn-volver:hover {
+    background: #8f94fb;
+}

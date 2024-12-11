@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Calificaciones - Sistema Academico</title>
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/calificaciones.css">
+</head>
+<body>
+    <header id="header"></header>
+    <main>
+        <h2>Gestion de Calificaciones</h2>
+        <div class="content"></div>
+        <section class="gestion-form">
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="estudiante">Codigo del Estudiante</label>
+                    <input type="text" id="estudiante" name="estudiante" required>
+                </div>
+                <div class="form-group">
+                    <label for="materia">Asignatura</label>
+                    <select id="materia" name="materia" required>
+                        <option value="1">Matematicas</option>
+                        <option value="2">Ciencias</option>
+                        <option value="3">Historia</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="calificacion">Calificacion</label>
+                    <input type="number" id="calificacion" name="calificacion" min="0" max="100" required>
+                </div>
+                <div class="form-group">
+                    <label for="fecha">Fecha de Registro</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+                <button type="submit" class="btn-submit">Registrar Calificacion</button>
+            </form>
+        </section>
+        <section class="calificaciones-registradas">
+            <h3>Calificaciones Registradas</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Codigo del Estudiante</th>
+                        <th>Materia</th>
+                        <th>Calificacion</th>
+                        <th>Fecha</th>
+                        <th>Acciones</th> 
+                    </tr>
+                </thead>
+                <tbody>
+                   
+                    <tr>
+                        <td>12345</td>
+                        <td>Matematicas</td>
+                        <td>85</td>
+                        <td>2024</td>
+                        <td>
+                            <button class="btn-edit">Actualizar</button>
+                            <button class="btn-delete">Eliminar</button>
+                        </td>
+                    </tr>
+                   
+                </tbody>
+            </table>
+        </section>
+        <a href="./inicio.html" class="btn-volver">Volver al inicio</a>
+    </main>
+    <script src="../assets/js/cargarComponente.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                cargarComponente('../components/header.html', 'header');
+            });
+        </script>
+</body>
+</html>

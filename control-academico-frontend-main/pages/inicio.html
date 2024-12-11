@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control academico</title>
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/inicio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <header id="header"></header>
+    <main>
+        
+        <section class="services">
+            <a href="../pages/alumnos.html">
+                <div class="service" id="alumnos-service">
+                    <div class="icon"><i class="fas fa-users"></i></div> 
+                    <h3>Alumnos</h3>
+                </div>
+            </a>
+            <a href="../pages/matriculas.html">
+                <div class="service" id="matricula-service">
+                    <div class="icon"><i class="fas fa-book"></i></div> 
+                    <h3>Matricula</h3>
+                </div>
+            </a>
+            <a href="../pages/asignaturas.html">
+                <div class="service" id="asignaturas-service">
+                    <div class="icon"><i class="fas fa-chalkboard"></i></div> 
+                    <h3>Asignaturas</h3>
+                </div>
+            </a>
+            <a href="../pages/grados.html">
+                <div class="service" id="grados-service">
+                    <div class="icon"><i class="fas fa-user-graduate"></i></div> 
+                    <h3>Grados</h3>
+                </div>
+            </a>
+            <a href="../pages/maestros.html">
+                <div class="service" id="maestros-service">
+                    <div class="icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                    <h3>Maestros</h3>
+                </div>
+            </a>
+
+            <a href="../pages/calificaciones.html">
+                <div class="service" id="gestion-calificaciones-service">
+                    <div class="icon"><i class="fas fa-file-alt"></i></div> 
+                    <h3>Gestion de Calificaciones</h3>
+                </div>
+            </a>
+            <a href="../pages/periodos.html">
+                <div class="service" id="periodos-service">
+                    <div class="icon"><i class="fas fa-calendar-alt"></i></div> 
+                    <h3>Periodos Academicos</h3>
+                </div>
+            </a>
+            <a href="../pages/asistencias.html">
+                <div class="service" id="asistencias-service">
+                    <div class="icon"><i class="fas fa-check-circle"></i></div> 
+                    <h3>Asistencias</h3>
+                </div>
+            </a>
+            <a href="../pages/reportes.html">
+                <div class="service" id="reportes-service">
+                    <div class="icon"><i class="fas fa-chart-pie"></i></div> 
+                    <h3>Reportes</h3>
+                </div>
+            </a>
+            <a href="../pages/configuraciones.html">
+                <div class="service" id="configuracion-service">
+                    <div class="icon"><i class="fas fa-tools"></i></div> 
+                    <h3>Configuracion</h3>
+                </div>
+            </a>
+            <a href="../pages/padres.html">
+                <div class="service" id="padres-service">
+                    <div class="icon"><i class="fas fa-id-card-alt"></i></div> 
+                    <h3>Padre de Familia</h3>
+                </div>
+            </a>
+        </section>
+    </main>
+    <script src="../assets/js/cargarComponente.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            cargarComponente('../components/header.html', 'header');
+        });
+    </script>
+</body>
+
+</html>

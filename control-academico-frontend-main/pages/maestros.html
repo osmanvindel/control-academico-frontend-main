@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Maestros - Sistema Académico</title>
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/formulario-persona.css">
+    <link rel="stylesheet" href="../assets/css/maestros.css">
+</head>
+<header id="header"></header>
+
+<body>
+    <h2>Registro de Maestros</h2>
+    <div id="form"></div>
+
+    <section class="tabla-registros">
+        <h2>Lista de Maestros</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Cédula</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Correo</th>
+                    <th>Teléfono</th>
+                    <th>Departamento</th>
+                    <th>Municipio</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>123456789</td>
+                    <td>Juan</td>
+                    <td>Pérez</td>
+                    <td>juan.perez@email.com</td>
+                    <td>99999999</td>
+                    <td>Atlántico</td>
+                    <td>Puerto</td>
+                    <td>
+                        <button class="btn-edit">Actualizar</button>
+                        <button class="btn-delete">Eliminar</button>
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </section>
+
+    <a href="./inicio.html" class="btn-volver">Volver al inicio</a>
+    </main>
+
+    <script>
+        function eliminarDireccion(id) {
+            if (confirm("¿Estás seguro de que deseas eliminar esta dirección?")) {
+                alert("Dirección con ID " + id + " eliminada.");
+                
+            }
+        }
+    </script>
+    <script src="../assets/js/cargarComponente.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            cargarComponente('../components/header.html', 'header');
+            cargarComponente('../components/formulario-persona.html', 'form');
+        });
+    </script>
+</body>
+
+</html>
